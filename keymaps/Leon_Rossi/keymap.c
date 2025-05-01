@@ -42,9 +42,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [Numbers] = LAYOUT_split_3x6_3(
-        KC_NO,  CH_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,   CH_DLR,  CH_PIPE,   CH_PERC,    KC_NO,    KC_NO,
+        KC_NO,  KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,   CH_DLR,  CH_PIPE,   CH_PERC,    KC_NO,    KC_NO,
         KC_ESC, CH_1,    CH_2,    LALT_T(CH_3),    LCTL_T(CH_4),    CH_5,                               CH_6,    LCTL_T(CH_7),    LALT_T(CH_8),    CH_9,    CH_0, KC_NO,
-        uC_NO, CH_PLUS,    CH_MINS,    CH_ASTR,    CH_SLSH,    CH_EQL,                               CH_QUES,    CH_EXLM,    CH_COMM, CH_DOT,  KC_NO, KC_NO,
+        KC_NO, CH_PLUS,    CH_MINS,    CH_ASTR,    CH_SLSH,    CH_EQL,                               CH_QUES,    CH_EXLM,    CH_COMM, CH_DOT,  KC_NO, KC_NO,
                                             TO(0), KC_LEFT_SHIFT, KC_BACKSPACE,           KC_TAB,  KC_SPACE,  KC_ENT
     ),
 
