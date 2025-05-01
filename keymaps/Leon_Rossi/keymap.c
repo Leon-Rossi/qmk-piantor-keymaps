@@ -35,37 +35,37 @@ const key_override_t **key_overrides = (const key_override_t *[]){
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [Base] = LAYOUT_split_3x6_3(
-        KC_ESC,  CH_Q,    CH_W,    CH_E,    CH_R,    CH_T,                               CH_Z,    CH_U,    CH_I,    CH_O,    CH_P,    TG(5),
-        KC_NO, CH_A,    CH_S,    LALT_T(CH_D),    LCTL_T(CH_F),    CH_G,                               CH_H,    LCTL_T(CH_J),    LALT_T(CH_K),    CH_L,    CH_SCLN, KC_NO,
+        KC_NO,  CH_Q,    CH_W,    CH_E,    CH_R,    CH_T,                               CH_Z,    CH_U,    CH_I,    CH_O,    CH_P,    TG(5),
+        KC_ESC, CH_A,    CH_S,    LALT_T(CH_D),    LCTL_T(CH_F),    CH_G,                               CH_H,    LCTL_T(CH_J),    LALT_T(CH_K),    CH_L,    CH_SCLN, KC_NO,
         KC_NO, CH_Y,    CH_X,    CH_C,    CH_V,    CH_B,                               CH_N,    CH_M,    CH_COMM, CH_DOT,  CH_SLSH, KC_NO,
                                             TT(1), KC_LEFT_SHIFT, KC_BACKSPACE,           TT(4),  KC_SPACE,  KC_ENT
     ),
 
     [Numbers] = LAYOUT_split_3x6_3(
-        KC_NO,  CH_UNDS,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,   CH_COLN,  CH_PIPE,   KC_NO,    KC_NO,    KC_NO,
-        KC_NO, CH_1,    CH_2,    LALT_T(CH_3),    LCTL_T(CH_4),    CH_5,                               CH_6,    LCTL_T(CH_7),    LALT_T(CH_8),    CH_9,    CH_0, KC_NO,
+        KC_NO,  CH_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,   CH_DLR,  CH_PIPE,   CH_PERC,    KC_NO,    KC_NO,
+        KC_ESC, CH_1,    CH_2,    LALT_T(CH_3),    LCTL_T(CH_4),    CH_5,                               CH_6,    LCTL_T(CH_7),    LALT_T(CH_8),    CH_9,    CH_0, KC_NO,
         uC_NO, CH_PLUS,    CH_MINS,    CH_ASTR,    CH_SLSH,    CH_EQL,                               CH_QUES,    CH_EXLM,    CH_COMM, CH_DOT,  KC_NO, KC_NO,
                                             TO(0), KC_LEFT_SHIFT, KC_BACKSPACE,           KC_TAB,  KC_SPACE,  KC_ENT
     ),
 
     [Arrows] = LAYOUT_split_3x6_3(
-        KC_NO, KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               CH_AT,    CH_HASH,    CH_AMPR,    CH_PERC,  KC_NO, KC_NO,
-        KC_NO, KC_NO,    KC_TAB,    KC_TRANSPARENT,    KC_TRANSPARENT,    KC_NO,                               KC_LEFT,    KC_DOWN,    KC_UP,    KC_RIGHT,  KC_TAB, KC_NO,
+        KC_NO, KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,    KC_NO,    KC_NO,    KC_NO,  KC_NO, KC_NO,
+        KC_ESC, KC_NO,    KC_TAB,    KC_TRANSPARENT,    KC_TRANSPARENT,    KC_NO,                               KC_LEFT,    KC_DOWN,    KC_UP,    KC_RIGHT,  KC_TAB, KC_NO,
         KC_NO, KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,    KC_NO,    KC_NO,    KC_NO,  KC_NO, KC_NO,
                                             KC_NO, KC_LEFT_SHIFT, KC_LEFT_CTRL,           KC_LEFT_ALT,  KC_SPACE,  KC_RALT
     ),
 
     [AeOeUe] = LAYOUT_split_3x6_3(
         KC_NO, KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,    KC_NO,    KC_NO,    KC_NO,  KC_NO, KC_NO,
-        KC_NO, CH_DQUO,    CH_UDIA,    CH_ODIA,    CH_ADIA,    KC_NO,                               KC_NO,    KC_TRANSPARENT,    KC_TRANSPARENT,    KC_NO,  KC_NO, KC_NO,
+        KC_ESC, CH_DQUO,    CH_UDIA,    CH_ODIA,    CH_ADIA,    KC_NO,                               KC_NO,    KC_TRANSPARENT,    KC_TRANSPARENT,    KC_NO,  KC_NO, KC_NO,
         KC_NO, KC_NO,    KC_NO,    KC_DOWN,    KC_NO,    KC_NO,                               KC_NO,    KC_NO,    KC_NO,    KC_NO,  KC_NO, KC_TRANSPARENT,
                                             TO(0), KC_LEFT_SHIFT, KC_LEFT_CTRL,           KC_LEFT_ALT,  KC_SPACE,  KC_RALT
     ),
 
     [Symbols] = LAYOUT_split_3x6_3(
-        KC_NO,  KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
-        KC_NO, CH_LABK,    CH_LBRC,    CH_LCBR,    CH_LPRN, CH_DQUO,                                  CH_QUOT,  CH_RPRN,    CH_RCBR,    CH_RBRC,    CH_RABK, KC_NO,
-        KC_NO, KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,    KC_NO,    KC_NO, KC_NO,  KC_NO, KC_NO,
+        KC_NO,  KC_NO,    CH_AMPR,    CH_HASH,    CH_AT,    KC_NO,                               KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
+        KC_ESC, CH_LABK,    CH_LBRC,    CH_LCBR,    CH_LPRN, CH_DQUO,                                  CH_QUOT,  CH_RPRN,    CH_RCBR,    CH_RBRC,    CH_RABK, KC_NO,
+        KC_NO, KC_NO,    KC_UNDS,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,    KC_NO,    KC_NO, KC_NO,  KC_NO, KC_NO,
                                             KC_TAB, KC_LEFT_SHIFT, KC_LEFT_CTRL,           TO(0),  KC_SPACE,  KC_NO
     ),
 
